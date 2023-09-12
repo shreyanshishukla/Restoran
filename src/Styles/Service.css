@@ -1,0 +1,49 @@
+.services {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  padding: 40px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  background-color: white;
+}
+
+.service-data {
+  display: flex;
+  color: rgb(249, 247, 247);
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  background-color: rgba(37, 34, 24, 0.216);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 3px 10px rgba(105, 50, 50, 0.7);
+}
+.service-data img {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(221, 130, 34, 0.955);
+  color: wheat;
+}
+.service-name {
+  font-size: x-large;
+  font-weight: 700;
+}
+.service-description {
+  font-size: medium;
+  font-weight: 600;
+}
+.service-data:hover {
+  width: 320px;
+  font-size: large;
+
+  color: rgb(47, 103, 163);
+}

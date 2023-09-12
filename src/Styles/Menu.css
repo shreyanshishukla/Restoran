@@ -1,0 +1,64 @@
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  color: rgb(43, 41, 41);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-self: flex-start;
+  margin-left: 20px;
+}
+.logo-text {
+  color: #fcb730;
+  font-family: "Lucida Sans";
+  font-size: xx-large;
+  font-weight: 900;
+  padding-top: 12px;
+}
+.menulist {
+  display: flex;
+  flex-direction: row;
+  align-self: right;
+  justify-content: space-evenly;
+  margin-right: 20px;
+  color: rgb(25, 16, 16);
+}
+.menu-options {
+  color: rgb(9, 2, 2);
+
+  font-weight: 600;
+  font-size: large;
+  font-family: Geneva, Verdana, sans-serif;
+  margin: 12px;
+}
+.cartBadge {
+  position: absolute;
+  right: -0.6em;
+  top: -1em;
+  display: flex;
+  color: white;
+  padding: 3px 3px 3px 3px;
+  margin: 2px;
+  border-radius: 3px;
+  background-color: #fcb730;
+  position: absolute;
+  right: -0.5em;
+  margin-right: 5px;
+  font-size: smaller;
+}
+.cart-option {
+  position: relative;
+  margin-right: 70px;
+  margin-top: 8px;
+}
+.imgcartbadge {
+  color: white;
+  height: 30px;
+}

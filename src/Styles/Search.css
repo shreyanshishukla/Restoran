@@ -1,0 +1,91 @@
+.searchbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 50vw;
+  margin-left: -4vh;
+}
+.search_area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.searchtop {
+  margin-left: -20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.backbtn {
+  height: 30px;
+  background-color: white;
+  border-radius: 5px;
+  color: #343545;
+  border: 1px solid #cfddde;
+}
+.searchbtn {
+  margin: 4px;
+  margin-left: 15vh;
+}
+.searchbtn img {
+  width: 20px;
+  height: 20px;
+  padding-top: 4px;
+}
+.searchinput {
+  margin: 4px;
+  width: 42vw;
+  border-radius: 5px;
+  border: solid rgba(142, 144, 142, 0.267) 2px;
+}
+.searcharea {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.sort-btn {
+  border: solid 2px rgb(73, 73, 130);
+  background-color: white;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+.FMoptions {
+  display: flex;
+  flex-direction: row;
+}
+.opt1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.vegonly .veg {
+  color: green;
+}
+.vegonly .non-veg {
+  color: red;
+}
+.vegonly .all {
+  color: rgb(14, 46, 78);
+}
+.searchh {
+  margin-left: 16.7vw;
+}
+.searchbtn {
+  background-color: white;
+  border: 1px solid #343545;
+  border-radius: 3px;
+  margin-left: -10px;
+}
+.searchdata {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: -25vh;
+}

@@ -1,0 +1,222 @@
+.menu-category {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  width: 30em;
+  padding-left: 40px;
+}
+
+.menu-category .navlink {
+  text-decoration: none;
+  color: rgba(242, 145, 10, 0.899);
+  font-weight: 700;
+  font-size: large;
+  font-family: fantasy;
+}
+.optcount {
+  color: rgba(242, 145, 10, 0.899);
+  font-weight: 700;
+  font-size: large;
+  font-family: fantasy;
+  margin-right: 10px;
+}
+.foodmenucontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+  margin-top: 7em;
+}
+.category {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px #ecece4;
+  border-radius: 10px;
+  position: sticky;
+  bottom: 100px;
+  left: 20vw;
+  background-color: white;
+}
+.category h1 {
+  font-family: Tahoma, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  color: #3282b8;
+}
+.menudishes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.outerdiv {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  border: #1b262c solid 2px;
+  border-radius: 7px;
+}
+
+.dishes {
+  display: flex;
+  flex-direction: column;
+  border: solid 4px #1b262c;
+  border-radius: 5px;
+
+  padding: 10px;
+  height: max-content;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: large;
+  font-weight: 500;
+}
+.outerdiv .img {
+  height: initial;
+
+  width: 75px;
+  background-color: #cbd588;
+  border-radius: 7px;
+}
+.FoodMenu-dishes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40vw;
+
+  margin-bottom: 29px;
+  border-bottom: solid 1px rgba(213, 207, 207, 0.808);
+}
+
+.FoodMenu-dishes .dishnamelist {
+  font-size: medium;
+  margin-top: 4px;
+
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #686b6d;
+}
+.dishpricelist {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  color: #686b6d;
+}
+.FMleft {
+  display: flex;
+  flex-direction: column;
+}
+.dishes-img {
+  position: relative;
+  display: flex;
+}
+.dishes-img .addToCart {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  border: solid 1px green;
+  background-color: white;
+  border-radius: 4px;
+  color: green;
+}
+.dishes-img img {
+  height: 15px;
+  width: 15px;
+}
+.FMright img {
+  width: 120px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+.FLh1 {
+  float: left;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+    sans-serif;
+  font-weight: 800;
+  font-size: medium;
+  color: #7f8099;
+}
+.dishdescriptionlist {
+  color: rgba(95, 94, 92, 0.899);
+  font-weight: 700;
+  font-size: small;
+  font-family: fantasy;
+  margin-right: 10px;
+}
+.browsemenu {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background-color: #1767b1f3;
+  color: white;
+  height: 40px;
+  font-size: medium;
+  padding: 20px;
+  border: none;
+  font-weight: 600;
+  font-family: fantasy;
+}
+.browsemenudiv {
+  position: sticky;
+  bottom: 76px;
+  left: 35vw;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+}
+.up {
+  display: flex;
+  position: sticky;
+  left: 80vw;
+  bottom: 40px;
+  background-color: #e6e022f3;
+  color: white;
+  font-size: x-large;
+  border-radius: 5px;
+  border: none;
+}
+.fmouter {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.showaddedtocart {
+  position: sticky;
+  bottom: 0px;
+  left: 28vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: green;
+  color: #eff1f3;
+  width: 43vw;
+  height: 7vh;
+  margin-left: -30vw;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+.rightcart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.rightcartimg {
+  width: 20px;
+  height: 20px;
+  margin-left: 4px;
+}
+.navlinkright {
+  text-decoration: none;
+  color: white;
+}

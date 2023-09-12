@@ -1,0 +1,167 @@
+.cardata {
+  background-color: rgb(174, 104, 20);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: solid 3px black;
+}
+.cartlist {
+  border-left: 3px solid rgba(0, 0, 0, 0.556);
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.cartitem {
+  margin: 30px 30px 0px 13px;
+  display: flex;
+  align-items: center;
+  height: 70px;
+  padding-left: 2px;
+  font-weight: 500;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.cartcol {
+  display: flex;
+  flex-direction: column;
+  margin: 4px 4px 0px 0;
+}
+.cartitemimg img {
+  height: 20px;
+  width: 20px;
+  margin-bottom: 0px;
+  margin-right: 5px;
+  margin-top: 3px;
+}
+
+.cartitemname {
+  font-size: small;
+}
+.cartitemtype {
+  font-size: x-small;
+  color: rgb(108, 100, 100);
+  margin-left: 2px;
+}
+.cartitemquantity {
+  margin: 4px;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid rgba(199, 203, 198, 0.81);
+}
+.cartadd {
+  color: rgb(73, 168, 26);
+  font-size: large;
+  border: 0;
+  font-weight: 600;
+  padding-top: 2px;
+  background-color: white;
+  margin: 2px;
+}
+.cartremove {
+  color: rgb(108, 100, 100);
+  font-size: large;
+  border: 0;
+  font-weight: 800;
+  background-color: white;
+  margin: 2px;
+}
+.cartitemquantityval {
+  font-size: medium;
+  padding-top: 2px;
+  margin: 2px;
+}
+.cartitemprice {
+  margin-left: 35px;
+  font-size: small;
+  color: rgb(108, 100, 100);
+}
+.Bill h5 {
+  font-size: small;
+  font-weight: 500;
+}
+.billlist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: solid 2px black;
+}
+.billitem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(108, 100, 100);
+  font-size: small;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.discount {
+  color: rgb(59, 228, 59);
+  border-top: solid 1px rgb(213, 207, 207, 0.808);
+  border-bottom: solid 1px rgba(213, 207, 207, 0.808);
+}
+.billdis {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: small;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.dis {
+  color: rgb(59, 228, 59);
+}
+.diamt {
+  color: rgb(59, 228, 59);
+}
+.PayAmount {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: medium;
+  font-weight: 700;
+}
+.deleteitem {
+  margin-left: 30px;
+  background-color: white;
+  border-radius: 5px;
+  border: solid 1px #323632;
+  padding: 3px;
+}
+
+.deleteitem img {
+  height: 20px;
+  width: 20px;
+}
+.clearcart {
+  margin-left: 30px;
+  background-color: white;
+  border-radius: 5px;
+
+  padding: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  font-weight: 400;
+  background-color: rgb(239, 146, 24);
+}
+.clearcart img {
+  height: 20px;
+  width: 20px;
+  margin: 5px;
+}
+.oops {
+  display: flex;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(105, 50, 50, 0.7);
+  margin-top: 30vh;
+  border-radius: 5px;
+  color: rgb(251, 145, 7);
+}

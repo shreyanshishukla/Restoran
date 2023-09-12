@@ -1,0 +1,88 @@
+[
+    {
+      "id":1,
+      "icon":":female-cook::skin-tone-3:",
+       "service": "masterchef",
+      "imagename":"masterchef",
+      "description": "For a memorable meal the quality of the service is something that guests often remember as much as the food and drink served."
+    },
+    {
+      "id":2,
+      "icon":":knife_fork_plate:",
+      "service": "Quality food",
+      "imagename":"trust",
+      "description": "For a memorable meal the quality of the service is something that guests often remember as much as the food and drink served."
+    },
+    {
+       "id":3,
+      "icon":":takeout_box:",
+      "service": "Online order",
+     "imagename":"onlinepay",
+
+      "description": "For a memorable meal the quality of the service is something that guests often remember as much as the food and drink served."
+    },
+    {
+        "id":3,
+      "icon":":headphones:",
+      "service": "24/7 service",
+     "imagename":"24x7",
+     
+      "description": "For a memorable meal the quality of the service is something that guests often remember as much as the food and drink served."
+    },
+     {
+      "id":1,
+      "icon":":female-cook::skin-tone-3:",
+       "service": "masterchef",
+      "imagename":"masterchef",
+      "description": "For a memorable meal the quality of the service is something that guests often remember as much as the food and drink served."
+    },
+    {
+      "id":2,
+      "icon":":knife_fork_plate:",
+      "service": "Quality food",
+      "imagename":"trust",
+      "description": "For a memorable meal the quality of the service is something that guests often remember as much as the food and drink served."
+    },
+    {
+       "id":3,
+      "icon":":takeout_box:",
+      "service": "Online order",
+     "imagename":"onlinepay",
+      "description": "For a memorable meal the quality of the service is something that guests often remember as much as the food and drink served."
+    },
+    {
+        "id":3,
+      "icon":":headphones:",
+      "service": "24/7 service",
+     "imagename":"24x7",
+      "description": "For a memorable meal the quality of the service is something that guests often remember as much as the food and drink served."
+    },
+     {
+      "id":1,
+      "icon":":female-cook::skin-tone-3:",
+       "service": "masterchef",
+      "imagename":"masterchef",
+      "description": "For a memorable meal the quality of the service is something that guests often remember as much as the food and drink served."
+    },
+    {
+      "id":2,
+      "icon":":knife_fork_plate:",
+      "service": "Quality food",
+      "imagename":"trust",
+      "description": "For a memorable meal the quality of the service is something that guests often remember as much as the food and drink served."
+    },
+    {
+       "id":3,
+      "icon":":takeout_box:",
+      "service": "Online order",
+     "imagename":"onlinepay",
+      "description": "For a memorable meal the quality of the service is something that guests often remember as much as the food and drink served."
+    },
+    {
+        "id":3,
+      "icon":":headphones:",
+      "service": "24/7 service",
+     "imagename":"24x7",
+      "description": "For a memorable meal the quality of the service is something that guests often remember as much as the food and drink served."
+    }
+]

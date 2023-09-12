@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { Outlet, RouterProvider } from "react-router-dom";
+import Menu from "./Components/Menu";
+import "./Styles/App.css";
+import { useSelector } from "react-redux";
+import Service from "./Components/Services/Service";
+import Home from "./Components/Home";
+import { useRef } from "react";
 
 function App() {
+  const abt = useRef();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="mainapp">
+      <Menu />
+
+      <div className="App">
+        <Outlet abt={abt} />
+      </div>
     </div>
   );
 }
