@@ -71,8 +71,15 @@
 }
 .cartitemprice {
   margin-left: 35px;
+  position: absolute;
+  left: 57.5vw;
+
   font-size: small;
   color: rgb(108, 100, 100);
+}
+.Bill {
+  margin-left: 20px;
+  width: 30vw;
 }
 .Bill h5 {
   font-size: small;
@@ -125,9 +132,11 @@
   margin-bottom: 20px;
   font-size: medium;
   font-weight: 700;
+  margin-left: 5px;
 }
 .deleteitem {
-  margin-left: 30px;
+  position: absolute;
+  left: 63.5vw;
   background-color: white;
   border-radius: 5px;
   border: solid 1px #323632;
@@ -142,15 +151,16 @@
   margin-left: 30px;
   background-color: white;
   border-radius: 5px;
-
+  color: white;
   padding: 3px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 4px;
-  font-weight: 400;
-  background-color: rgb(239, 146, 24);
+  padding: 6px;
+  font-weight: 600;
+  background-color: rgb(244, 173, 81);
+  border: 1px white solid;
 }
 .clearcart img {
   height: 20px;

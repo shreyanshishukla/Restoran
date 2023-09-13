@@ -3,24 +3,27 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  height: 70vh;
 }
 .form-heading-small {
+  margin-left: 2.5vw;
+  margin-top: 19vh;
 }
 .BAT {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  height: 70vh;
   margin-top: 5%;
 }
 .bookatableform {
   display: flex;
   flex-direction: column;
-  background-color: #75c2f6;
+  background: linear-gradient(#f3b16b, #fceca7);
   color: white;
-  width: 30vw;
-  height: 60vh;
+  width: 35vw;
+  height: 70vh;
 }
 .form-heading-large {
   display: flex;
@@ -28,6 +31,8 @@
   font-size: xx-larger;
   font-weight: 700;
   font-family: Georgia, "Times New Roman", Times, serif;
+  margin-left: 3em;
+  padding-top: -4vh;
 }
 .form-bookatable {
   display: flex;
@@ -41,6 +46,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-left: 3em;
 }
 .inputfield {
   height: 35px;
@@ -75,13 +81,14 @@
 }
 .btn-bat {
   height: 40px;
-  border: solid 2px #1d5d9b;
-  background-color: #fbeeac;
+  border: none;
+  background-color: #e8791f;
   padding: 10px;
   display: block;
-  color: #1d5d9b;
+  color: #f3f5f7;
   width: 29vw;
   font-weight: 800;
   border-radius: 5px;
   margin: 10px;
+  margin-left: -30px;
 }

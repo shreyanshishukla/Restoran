@@ -1,4 +1,4 @@
-import "../Styles/Foodmenu.css";
+import "../../Styles/Foodmenu.css";
 export default () => {
   return (
     <button

@@ -1,52 +1,31 @@
-import axios from "axios";
-import { useEffect, useRef, useState } from "react";
-import { useDispatch } from "react-redux";
+import { useRef, useState } from "react";
 import { NavLink, Outlet } from "react-router-dom";
-import { add, loadDishes } from "../../Utils/Reducer";
-import { useSelector } from "react-redux";
 import "../../Styles/Foodmenu.css";
 import FoodList from "./FoodList";
 import Options from "./Options";
-import Up from "../Up";
+import Up from "../Up/Up";
+import useMenu from "../../Utils/useMenu";
+import ViewCart from "../ViewCart/ViewCart";
+import { ShowChart } from "@mui/icons-material";
 
 export default () => {
-  const [sorttype, setsorttype] = useState(0);
-  const [openmenu, setopenmenu] = useState(false);
   const ref = useRef();
-  const dispatcher = useDispatch();
-  useEffect(() => {
-    axios
-      .get("http://localhost:3001/menus")
-      .then((data) => {
-        dispatcher(add(data.data));
-        dispatcher(loadDishes());
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
-  const [searching, setSearching] = useState(false);
-  const searchingfunction = (val) => {
-    setSearching(val);
-  };
-  const data = useSelector((data) => data.menudata.menudata);
-  const cartcount = useSelector((data) => data.cart.cartCount);
-  const cartTotal = useSelector((data) => data.cart.cartTotal);
-  const dishes = useSelector((data) => data.menudata.dishes);
+  const {
+    filterfood,
+    sortfood,
+    searchingfunction,
+    searching,
+    filtertype,
+    sorttype,
+    openmenu,
+    data,
+    dishes,
+    setopenmenu,
 
-  const [filtertype, setfiltertype] = useState(0);
+    cartTotal,
+    cartcount,
+  } = useMenu();
   const [category, setcategory] = useState("");
-
-  const filterfood = (veg) => {
-    setfiltertype(veg);
-  };
-  const sortfood = (type) => {
-    if (type != sorttype) {
-      setsorttype(type);
-    } else {
-      setsorttype(0);
-    }
-  };
   const bluroutbg = (val) => {
     if (val) ref.current.style.filter = " grayscale(0)opacity(1)";
     else
@@ -114,20 +93,8 @@ export default () => {
           Browse Menu
         </button>
       </div>
-      {cartcount != 0 && (
-        <div className="showaddedtocart">
-          <div className="leftcart">
-            {" "}
-            {cartcount} items |₹ {cartTotal}
-          </div>
-          <div className="rightcart">
-            {" "}
-            <NavLink to="/Cart" className="navlinkright">
-              VIEW CART
-            </NavLink>
-            <img src="./bag.png" className="rightcartimg" />
-          </div>
-        </div>
+      {cartcount != 0 && !searching && (
+        <ViewCart cartTotal={cartTotal} cartcount={cartcount} />
       )}
 
       <Up />

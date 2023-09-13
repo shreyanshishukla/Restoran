@@ -11,7 +11,6 @@ export default ({ dish }) => {
           <button
             className="addToCart"
             onClick={() => {
-              console.log("addind");
               dispatcher(
                 addToCart({
                   name: dish.name,
@@ -26,11 +25,16 @@ export default ({ dish }) => {
           >
             Add +
           </button>
-
-          {dish.veg ? <img src="./veg.png" /> : <img src="./nonveg.png" />}
+        </div>
+        <div className="sameline">
+          <div className="dishnamelist">{dish.name}</div>
+          {dish.veg ? (
+            <img src="./veg.png" className="dishimgveg" />
+          ) : (
+            <img src="./nonveg.png" className="dishimgveg" />
+          )}
         </div>
 
-        <div className="dishnamelist">{dish.name}</div>
         <div className="dishpricelist">₹{dish["sub-items"][0].price}</div>
         <div className="dishdescriptionlist">{dish.description}</div>
       </div>

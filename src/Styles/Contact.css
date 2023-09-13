@@ -1,0 +1,142 @@
+.contactconatiner {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  margin-top: 10vh;
+  box-shadow: 2px 2px 2px 2px #456666;
+  width: 80vw;
+  height: 80vh;
+  margin-bottom: 30vh;
+  background-color: #fdfdfcda;
+  background: linear-gradient(#f6b174, #ba8d8d);
+  border-radius: 5px;
+}
+.contatussmall {
+  font-family: cursive;
+  font-size: 20px;
+  font-weight: 800;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 14px;
+  color: white;
+}
+.yellowbar {
+  width: 80px;
+  height: 5px;
+  background-color: rgb(235, 127, 27);
+  border-radius: 5px;
+  margin: 10px;
+  margin-top: 14px;
+}
+.contactusforanyquery {
+  font-family: fantasy;
+  font-size: 55px;
+  font-weight: 800;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 14px;
+  color: white;
+}
+
+.subss {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10vw;
+  margin-top: 2vh;
+}
+.contactussub1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 2vw;
+}
+.contactussubs {
+  display: flex;
+  flex-direction: column;
+  margin-right: 6vw;
+}
+.subbottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: -30px;
+  justify-content: space-between;
+  font-family: cursive;
+  font-size: medium;
+  font-weight: 800;
+  color: white;
+}
+.subbottom img {
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
+}
+.subtop {
+  font-size: 2vh;
+  display: flex;
+  flex-direction: row;
+  font-family: cursive;
+  color: white;
+  font-weight: 900;
+  margin-left: -50px;
+}
+.section2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
+  margin-left: 58px;
+  margin-top: 10px;
+}
+.leftmap {
+  margin: 20px;
+}
+.leftmap img {
+  width: 400px;
+  height: 400px;
+}
+.rightform {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 34vw;
+  margin-top: 50px;
+}
+.rightform input {
+  border: solid 2px #ecebdf;
+  outline: #fbe414;
+}
+.rightform .inpt {
+  height: 4vh;
+  width: 14.5vw;
+  margin: 5px;
+}
+.rightform .inptsub {
+  height: 4vh;
+  width: 30vw;
+  margin: 5px;
+}
+.rightform .msg {
+  height: 14vh;
+  width: 30vw;
+  margin: 5px;
+}
+.rightform button {
+  width: 30.5vw;
+  margin: 5px;
+  border: 2px solid orange;
+  background-color: orange;
+  height: 5vh;
+  font-size: medium;
+  color: white;
+  font-weight: 700;
+}

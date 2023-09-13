@@ -4,16 +4,10 @@ import { addToCart, loadDishes, sortasc, sortdec } from "../../Utils/Reducer";
 import { useEffect, useRef, useState } from "react";
 import Dish from "./Dish";
 import "../../Styles/Foodmenu.css";
+import useFoodlist from "../../Utils/useFoodlist";
 export default ({ filtertype, sorttype, category }) => {
-  const data = useSelector((data) => data.menudata.menudata);
-  const dishes = useSelector((data) => data.menudata.dishes);
-  const dispatcher = useDispatch();
-
-  useEffect(() => {
-    if (sorttype == 0) dispatcher(loadDishes());
-    else if (sorttype == 1) dispatcher(sortdec());
-    else dispatcher(sortasc());
-  }, [sorttype]);
+  useEffect(() => console.log(category), [category]);
+  const { data, dishes } = useFoodlist({ sorttype });
   return (
     <>
       <div className="FLouter">

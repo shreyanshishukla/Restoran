@@ -1,7 +1,7 @@
-import { Outlet, useNavigate } from "react-router-dom";
-import "../Styles/Home.css";
+import { NavLink, Outlet, useNavigate } from "react-router-dom";
+import "../../Styles/Home.css";
 import { useRef } from "react";
-import About from "../Components/About/About";
+import About from "../About/About";
 
 export default ({ abt }) => {
   const navigate = useNavigate();
@@ -49,10 +49,27 @@ export default ({ abt }) => {
       </div>
       <Outlet abt={abt} />
       <div className="parallex">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, rem
-        facilis! Error, nisi molestias! Voluptas commodi ratione eum quidem
-        necessitatibus ipsa sint assumenda quasi repellendus, quod nam pariatur
-        impedit sunt?
+        <div className="parachild">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, rem
+          facilis! Error, nisi molestias! Voluptas commodi ratione eum quidem
+          necessitatibus ipsa sint assumenda quasi repellendus, quod nam
+          pariatur impedit sunt? Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Quasi, rem facilis! Error, nisi molestias! Voluptas
+          commodi ratione eum quidem necessitatibus ipsa sint assumenda quasi
+          repellendus, quod nam pariatur impedit sunt?Lorem ipsum dolor sit amet
+          cas commodi ratione eum quidem necessitatibus ipsa sint assumenda
+          quasi repellendus, quod nam pariatur impedit sunt?Lorem ipsum dolor
+          sit amet consectetur adipisicing elit. Quasi, rem facilis! Error, nisi
+          molestias! Voluptas commodi ratione eum quidem necessitatibus ipsa
+          sint assumenda quasi ssumenda?
+        </div>
+      </div>
+      <div className="footer">
+        <div className="ffooter">
+          <NavLink to="/menu" className="navlink">
+            Order-now
+          </NavLink>
+        </div>
       </div>
     </>
   );

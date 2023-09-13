@@ -8,7 +8,7 @@ export default () => {
           <div className="video">
             <iframe
               width="600"
-              height="590"
+              height="695"
               src="https://www.youtube.com/embed/xPPLbEFbCAo?si=lVuT9h3Nw_YJ26XY"
             ></iframe>
           </div>

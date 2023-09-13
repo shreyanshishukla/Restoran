@@ -84,7 +84,7 @@
   flex-direction: row;
   justify-content: space-between;
   width: 40vw;
-
+  margin-top: 10px;
   margin-bottom: 29px;
   border-bottom: solid 1px rgba(213, 207, 207, 0.808);
 }
@@ -92,7 +92,7 @@
 .FoodMenu-dishes .dishnamelist {
   font-size: medium;
   margin-top: 4px;
-
+  display: inline;
   font-weight: 500;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #686b6d;
@@ -105,10 +105,18 @@
 .FMleft {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 40px;
 }
 .dishes-img {
   position: relative;
   display: flex;
+}
+.sameline {
+  display: flex;
+  flex-direction: row;
+}
+.sameline .dishimgveg {
 }
 .dishes-img .addToCart {
   position: absolute;
@@ -119,9 +127,12 @@
   border-radius: 4px;
   color: green;
 }
-.dishes-img img {
+.dishimgveg {
   height: 15px;
   width: 15px;
+  float: right;
+  margin-left: 10px;
+  margin-top: 6px;
 }
 .FMright img {
   width: 120px;
