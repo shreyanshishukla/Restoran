@@ -1,5 +1,7 @@
+import { useState } from "react";
 import "../../Styles/Contact.css";
 export default () => {
+  const [notify, setNotify] = useState(false);
   return (
     <div className="contactconatiner">
       <div className="contatussmall">
@@ -48,36 +50,54 @@ export default () => {
           </div>
         </div>
       </div>
-      <div className="section2">
-        <div className="leftmap">
-          <img src="https://www.infinetsoft.com/Uploads/20170111101701google%20maps%20directions%20from%20current%20location.png" />
+      {!notify && (
+        <div className="section2">
+          <div className="leftmap">
+            <img src="https://www.infinetsoft.com/Uploads/20170111101701google%20maps%20directions%20from%20current%20location.png" />
+          </div>
+          <div className="rightform">
+            <form>
+              <input
+                placeholder="Your name?"
+                className="inpt"
+                type="text"
+                required
+              />
+              <input
+                placeholder="Your email?"
+                className="inpt"
+                type="email"
+                required
+              />
+              <input
+                placeholder="Subject"
+                className="inptsub"
+                type="text"
+                required
+              />
+              <input
+                placeholder="Message"
+                className="msg"
+                type="text"
+                required
+              />
+              <br />
+              <button
+                onClick={() => {
+                  setNotify(true);
+                }}
+              >
+                Send
+              </button>{" "}
+            </form>
+          </div>
         </div>
-        <div className="rightform">
-          <form>
-            <input
-              placeholder="Your name?"
-              className="inpt"
-              type="text"
-              required
-            />
-            <input
-              placeholder="Your email?"
-              className="inpt"
-              type="text"
-              required
-            />
-            <input
-              placeholder="Subject"
-              className="inptsub"
-              type="text"
-              required
-            />
-            <input placeholder="Message" className="msg" type="text" required />
-            <br />
-            <button>Send</button>{" "}
-          </form>
+      )}
+      {notify && (
+        <div className="notify">
+          Thanks for the feedback, We will reach out to you soon!
         </div>
-      </div>
+      )}
     </div>
   );
 };
